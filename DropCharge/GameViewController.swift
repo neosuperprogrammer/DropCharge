@@ -22,17 +22,30 @@
 
 import UIKit
 import SpriteKit
+import GoogleMobileAds
+import Crashlytics
 
-class GameViewController: UIViewController {
+class GameViewController: UIViewController, GADInterstitialDelegate {
+    var interstitial : GADInterstitial!
 
+    @IBOutlet weak var GoogleBannerView: GADBannerView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let tracker = GAI.sharedInstance().defaultTracker
+        tracker.set(kGAIScreenName, value: "Game Main Scene")
+        
+        let builder = GAIDictionaryBuilder.createScreenView()
+        tracker.send(builder.build() as [NSObject : AnyObject])
 
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(didEnd), name: "GameEndNoti", object: nil)
+        
         if let scene = GameScene(fileNamed:"GameScene") {
             // Configure the view.
             let skView = self.view as! SKView
-            skView.showsFPS = true
-            skView.showsNodeCount = true
+//            skView.showsFPS = true
+//            skView.showsNodeCount = true
             skView.showsPhysics = false
             
             /* Sprite Kit applies additional optimizations to improve rendering performance */
@@ -43,8 +56,64 @@ class GameViewController: UIViewController {
             
             skView.presentScene(scene)
         }
+        
+        self.interstitial = reloadInterstitialAd()
+        
+        
+        #if false
+            #if DEBUG
+                GoogleBannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+            #else
+                
+                GoogleBannerView.adUnitID = "ca-app-pub-9254009028575157/8526879024"
+            #endif
+            
+            
+            GoogleBannerView.rootViewController = self
+            GoogleBannerView.loadRequest(GADRequest())
+        #endif
+        
+        
+        
+//        let button = UIButton(type: UIButtonType.RoundedRect)
+//        button.frame = CGRectMake(20, 50, 100, 30)
+//        button.setTitle("Crash", forState: UIControlState.Normal)
+//        button.addTarget(self, action: #selector(self.crashButtonTapped(_:)), forControlEvents: UIControlEvents.TouchUpInside)
+//        view.addSubview(button)
+
+    }
+    
+//    @IBAction func crashButtonTapped(sender: AnyObject) {
+//        Crashlytics.sharedInstance().crash()
+//    }
+
+    
+    func didEnd(notification: NSNotification){
+        self.showAd()
+    }
+    
+    func showAd()
+    {
+        if (self.interstitial.isReady)
+        {
+            self.interstitial.presentFromRootViewController(self)//Whatever  shows the ad
+        }
     }
 
+    func reloadInterstitialAd() -> GADInterstitial {
+        #if DEBUG
+            let interstitial = GADInterstitial(adUnitID: "ca-app-pub-3940256099942544/4411468910")
+        #else
+            let interstitial = GADInterstitial(adUnitID: "ca-app-pub-9254009028575157/8679826222")
+        #endif
+      
+        
+        interstitial.delegate = self
+        interstitial.loadRequest(GADRequest())
+        return interstitial
+    }
+    
+    
     override func shouldAutorotate() -> Bool {
         return true
     }
@@ -64,5 +133,9 @@ class GameViewController: UIViewController {
 
     override func prefersStatusBarHidden() -> Bool {
         return true
+    }
+    
+    func interstitialDidDismissScreen(ad: GADInterstitial!) {
+        self.interstitial = reloadInterstitialAd()
     }
 }

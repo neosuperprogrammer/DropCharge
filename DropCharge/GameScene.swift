@@ -466,6 +466,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
       newScene!.scaleMode = .AspectFill
       let reveal = SKTransition.flipHorizontalWithDuration(0.5)
       self.view?.presentScene(newScene!, transition: reveal)
+
       
     default:
       break
@@ -582,8 +583,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     if player.position.y < lava.position.y + 180 {
       playerState.enterState(Lava)
         if lives <= 0 {
-          playerState.enterState(Dead)
-          gameState.enterState(GameOver)
+            playerState.enterState(Dead)
+            gameState.enterState(GameOver)
         }
     }
   }

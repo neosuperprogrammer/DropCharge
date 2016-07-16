@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B221E76D178A2D4BD378ED8 /* Pods_DropChargeTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D520A3EED0EA11D36D9A9B18 /* Pods_DropChargeTV.framework */; };
+		2543FC6A3A5155794C39CA86 /* Pods_DropCharge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A698B05ACEBCD03266A1CF4 /* Pods_DropCharge.framework */; };
+		3E0D34A71D39249100492749 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E0D34A61D39249100492749 /* GoogleService-Info.plist */; };
+		3E451C701D3A226A00C62FBF /* ObjectiveTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E451C6F1D3A226A00C62FBF /* ObjectiveTest.m */; };
 		EE0F0DFB1B9F51CC00C1CA79 /* alarm.wav in Resources */ = {isa = PBXBuildFile; fileRef = EE0F0DE91B9F51CC00C1CA79 /* alarm.wav */; };
 		EE0F0DFC1B9F51CC00C1CA79 /* attribution.txt in Resources */ = {isa = PBXBuildFile; fileRef = EE0F0DEA1B9F51CC00C1CA79 /* attribution.txt */; };
 		EE0F0DFD1B9F51CC00C1CA79 /* bgMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EE0F0DEB1B9F51CC00C1CA79 /* bgMusic.mp3 */; };
@@ -149,6 +153,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F5319BAA0320E746475FE95 /* Pods-DropChargeTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DropChargeTV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DropChargeTV/Pods-DropChargeTV.debug.xcconfig"; sourceTree = "<group>"; };
+		1B7DF9EE0747F22CC9CD2493 /* Pods-DropCharge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DropCharge.release.xcconfig"; path = "Pods/Target Support Files/Pods-DropCharge/Pods-DropCharge.release.xcconfig"; sourceTree = "<group>"; };
+		3E0D34A61D39249100492749 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3E451C6D1D3A226900C62FBF /* DropCharge-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DropCharge-Bridging-Header.h"; sourceTree = "<group>"; };
+		3E451C6E1D3A226A00C62FBF /* ObjectiveTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectiveTest.h; sourceTree = "<group>"; };
+		3E451C6F1D3A226A00C62FBF /* ObjectiveTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectiveTest.m; sourceTree = "<group>"; };
+		6A698B05ACEBCD03266A1CF4 /* Pods_DropCharge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DropCharge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77203B724AACA31C688C19D9 /* Pods-DropCharge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DropCharge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DropCharge/Pods-DropCharge.debug.xcconfig"; sourceTree = "<group>"; };
+		BD7BCD2620E9A113390477DA /* Pods-DropChargeTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DropChargeTV.release.xcconfig"; path = "Pods/Target Support Files/Pods-DropChargeTV/Pods-DropChargeTV.release.xcconfig"; sourceTree = "<group>"; };
+		D520A3EED0EA11D36D9A9B18 /* Pods_DropChargeTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DropChargeTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE0F0DE91B9F51CC00C1CA79 /* alarm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = alarm.wav; sourceTree = "<group>"; };
 		EE0F0DEA1B9F51CC00C1CA79 /* attribution.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = attribution.txt; sourceTree = "<group>"; };
 		EE0F0DEB1B9F51CC00C1CA79 /* bgMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgMusic.mp3; sourceTree = "<group>"; };
@@ -234,6 +248,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2543FC6A3A5155794C39CA86 /* Pods_DropCharge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,12 +256,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B221E76D178A2D4BD378ED8 /* Pods_DropChargeTV.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A718AA8B365EDC40A046B9C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A698B05ACEBCD03266A1CF4 /* Pods_DropCharge.framework */,
+				D520A3EED0EA11D36D9A9B18 /* Pods_DropChargeTV.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C7C9439162DCADB820703EF7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				77203B724AACA31C688C19D9 /* Pods-DropCharge.debug.xcconfig */,
+				1B7DF9EE0747F22CC9CD2493 /* Pods-DropCharge.release.xcconfig */,
+				0F5319BAA0320E746475FE95 /* Pods-DropChargeTV.debug.xcconfig */,
+				BD7BCD2620E9A113390477DA /* Pods-DropChargeTV.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EE0F0DE81B9F51CC00C1CA79 /* sounds */ = {
 			isa = PBXGroup;
 			children = (
@@ -275,9 +311,12 @@
 		EE3311361B825E7A00732E9A = {
 			isa = PBXGroup;
 			children = (
+				3E0D34A61D39249100492749 /* GoogleService-Info.plist */,
 				EE3311411B825E7A00732E9A /* DropCharge */,
 				EE4C23B71BA8732800EA636D /* DropChargeTV */,
 				EE3311401B825E7A00732E9A /* Products */,
+				C7C9439162DCADB820703EF7 /* Pods */,
+				3A718AA8B365EDC40A046B9C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -306,6 +345,9 @@
 				EE33114F1B825E7C00732E9A /* LaunchScreen.storyboard */,
 				EE3311521B825E7C00732E9A /* Info.plist */,
 				EE50CC7C1B84FE8B00216A30 /* SKTUtils */,
+				3E451C6E1D3A226A00C62FBF /* ObjectiveTest.h */,
+				3E451C6F1D3A226A00C62FBF /* ObjectiveTest.m */,
+				3E451C6D1D3A226900C62FBF /* DropCharge-Bridging-Header.h */,
 			);
 			path = DropCharge;
 			sourceTree = "<group>";
@@ -410,9 +452,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EE3311551B825E7C00732E9A /* Build configuration list for PBXNativeTarget "DropCharge" */;
 			buildPhases = (
+				A8E59B282D72DEA4AB8A2514 /* [CP] Check Pods Manifest.lock */,
 				EE33113B1B825E7A00732E9A /* Sources */,
 				EE33113C1B825E7A00732E9A /* Frameworks */,
 				EE33113D1B825E7A00732E9A /* Resources */,
+				AFD8F0AAD236DA55A9C6AE68 /* [CP] Embed Pods Frameworks */,
+				74E1243B2AA9273B37CD03BC /* [CP] Copy Pods Resources */,
+				3E451C6C1D3943A400C62FBF /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -427,9 +473,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EE4C23CA1BA8732900EA636D /* Build configuration list for PBXNativeTarget "DropChargeTV" */;
 			buildPhases = (
+				D74296025A4AAF29AF55F01D /* [CP] Check Pods Manifest.lock */,
 				EE4C23B21BA8732800EA636D /* Sources */,
 				EE4C23B31BA8732800EA636D /* Frameworks */,
 				EE4C23B41BA8732800EA636D /* Resources */,
+				0CB67454B1C46B93C85FFC36 /* [CP] Embed Pods Frameworks */,
+				AF9E13063BA15D0AC0EF808F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -446,7 +495,7 @@
 		EE3311371B825E7A00732E9A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0710;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = flowgrammer;
 				TargetAttributes = {
@@ -484,6 +533,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE0F0E021B9F51CC00C1CA79 /* coin4.wav in Resources */,
+				3E0D34A71D39249100492749 /* GoogleService-Info.plist in Resources */,
 				EE0F0E061B9F51CC00C1CA79 /* explosion3.wav in Resources */,
 				EE74A01E1B8794440010D7F6 /* CoinSCross.sks in Resources */,
 				EEEFBC5A1B83A69C007E1C4A /* Platform5Across.sks in Resources */,
@@ -586,6 +636,112 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0CB67454B1C46B93C85FFC36 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DropChargeTV/Pods-DropChargeTV-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E451C6C1D3943A400C62FBF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" cead31e8cc99948b25379edb482a66233d6ca003 3a5346994eedac936cc1dffbeefd6d68f498494a826555fb6cd8daeaa035af3a";
+		};
+		74E1243B2AA9273B37CD03BC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DropCharge/Pods-DropCharge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8E59B282D72DEA4AB8A2514 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AF9E13063BA15D0AC0EF808F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DropChargeTV/Pods-DropChargeTV-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFD8F0AAD236DA55A9C6AE68 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DropCharge/Pods-DropCharge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D74296025A4AAF29AF55F01D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EE33113B1B825E7A00732E9A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -611,6 +767,7 @@
 				EE50CC8C1B84FE8C00216A30 /* Int+Extensions.swift in Sources */,
 				EE50CC901B84FE8C00216A30 /* SKNode+Extensions.swift in Sources */,
 				EE50CC911B84FE8C00216A30 /* SKTAudio.swift in Sources */,
+				3E451C701D3A226A00C62FBF /* ObjectiveTest.m in Sources */,
 				EE50CC891B84FE8C00216A30 /* CGFloat+Extensions.swift in Sources */,
 				EE96D62E1B8F862400866B44 /* Dead.swift in Sources */,
 				EE50CC941B84FE8C00216A30 /* Vector3.swift in Sources */,
@@ -764,34 +921,45 @@
 		};
 		EE3311561B825E7C00732E9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77203B724AACA31C688C19D9 /* Pods-DropCharge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: SangWook Nam (2DPLLUVV7H)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				INFOPLIST_FILE = DropCharge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-DDEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flowgrammer.DropCharge;
 				PRODUCT_NAME = NeoDropCharge;
 				PROVISIONING_PROFILE = "58233c7f-6126-43fd-a97f-e8cc2402bd8b";
+				SWIFT_OBJC_BRIDGING_HEADER = "DropCharge/DropCharge-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		EE3311571B825E7C00732E9A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B7DF9EE0747F22CC9CD2493 /* Pods-DropCharge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: SangWook Nam (H9WM357P4G)";
 				INFOPLIST_FILE = DropCharge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-DRELEASE";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flowgrammer.DropCharge;
 				PRODUCT_NAME = NeoDropCharge;
 				PROVISIONING_PROFILE = "de4295c3-36ba-4b48-ad97-ceb30cb431cf";
+				SWIFT_OBJC_BRIDGING_HEADER = "DropCharge/DropCharge-Bridging-Header.h";
 			};
 			name = Release;
 		};
 		EE4C23C81BA8732900EA636D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F5319BAA0320E746475FE95 /* Pods-DropChargeTV.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "tvOS Icon";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -808,6 +976,7 @@
 		};
 		EE4C23C91BA8732900EA636D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD7BCD2620E9A113390477DA /* Pods-DropChargeTV.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "tvOS Icon";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

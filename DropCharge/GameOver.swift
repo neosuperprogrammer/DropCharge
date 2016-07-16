@@ -31,6 +31,14 @@ class GameOver: GKState {
       scene.addChild(explosion)
       scene.runAction(scene.soundExplosions[3])
       scene.screenShakeByAmt(200)
+        let delayTime = dispatch_time(DISPATCH_TIME_NOW,
+                                      Int64(1 * Double(NSEC_PER_SEC)))
+        
+        dispatch_after(delayTime, dispatch_get_main_queue())
+        {
+            NSNotificationCenter.defaultCenter().postNotificationName("GameEndNoti", object: nil)
+        }
+
     }
   }
   
