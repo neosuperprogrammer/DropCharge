@@ -59,7 +59,6 @@ class GameViewController: UIViewController, GADInterstitialDelegate {
         
         self.interstitial = reloadInterstitialAd()
         
-        
         #if false
             #if DEBUG
                 GoogleBannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
